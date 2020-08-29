@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Connect Four</h1>
+		<p>Connect Four is a game where players take turn dropping colored circles in the top of the board, along different rows.  The goal is to make a row
+			of 4 circles in a row - straight or diagnol.</p>
+		<p>This demo does not have a computer partner.</p>
+		<button id="startGame" onclick="startGame();">Begin Game</button>
+		<div id="gameboard">
+			<div id="instructions">
+			</div>
+			<table id="table">
+				<thead>
+					<tr>
+						<td><button onclick="dropDiskIntoColumn(0);">Drop</button></td>
+						<td><button onclick="dropDiskIntoColumn(1);">Drop</button></td>
+						<td><button onclick="dropDiskIntoColumn(2);">Drop</button></td>
+						<td><button onclick="dropDiskIntoColumn(3);">Drop</button></td>
+						<td><button onclick="dropDiskIntoColumn(4);">Drop</button></td>
+						<td><button onclick="dropDiskIntoColumn(5);">Drop</button></td>
+						<td><button onclick="dropDiskIntoColumn(6);">Drop</button></td>
+					</tr>
+                </thead>
+                <script>
+                    for (let row=0; row<=5; row++) {
+                        document.writeln("<tr id='" + row + "'>");	
+                        for (let col=0; col<=6; col++) {
+                            document.writeln("<td id='circle_" + row + "_"+ col + "'' class='boardCircle'></td>");							
+                        }
+                        document.writeln("</tr>");	
+                    }						
+                    </script>
+                </table>
+                <div id="gameStatus">
+                </div>
+            </div>
+
+<script src="script.js"></script>
+</body>
+</html>

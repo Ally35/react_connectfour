@@ -1,0 +1,90 @@
+button.place{
+    font-family: Helvetica, sans-serif;
+    height: 34px;
+    width: 64px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+button#startGame {
+    font-family: Helvetica, sans-serif;
+    white-space: normal;
+    font-size: 18px;
+    height: 34px;
+    width: 480px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    margin-bottom: 8px;
+    padding: 0px;
+}
+.piece {
+    background:#FFFFFF;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display:block;
+    padding: 1px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.boardCircle {
+    padding: 1px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.player0 {
+    background-color: #FFFFFF; 
+}
+.player1 {
+    background: linear-gradient(to bottom, rgba(253, 0, 0, 0.815) 0%,rgb(153, 5, 5) 100%);
+
+}
+.player2 {
+    background: linear-gradient(to bottom, rgb(35, 130, 255) 0%,rgb(1, 41, 100) 100%);
+}
+#gameboard {
+    width: 480px;
+    background-color: #f5ff79;
+}
+
+button.place:hover {
+    background: linear-gradient(to bottom, rgba(31, 72, 255, 0.815) 0%,rgb(0, 60, 150) 100%);
+    filter: brightness(80%);
+    color: white;
+}
+
+button.place:focus {
+    filter: brightness(100%);
+}
+
+button#startGame:hover {
+    background: linear-gradient(to bottom, rgba(31, 72, 255, 0.815) 0%,rgb(0, 60, 150) 100%);
+    filter: brightness(80%);
+    color: white;
+}
+
+button#startGame:focus {
+    background: linear-gradient(to bottom, rgba(31, 72, 255, 0.815) 0%,rgb(0, 60, 150) 100%);
+    filter: brightness(100%);
+    color: white;
+}
+
+h1 {
+    margin-left: 110px;
+    font-size: 40px;
+    background: linear-gradient(to bottom, rgba(31, 72, 255, 0.815) 0%,rgb(0, 60, 150) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    margin-left: 100px;
+    font-size: 20px;
+    color: rgb(40, 22, 122);
+}
